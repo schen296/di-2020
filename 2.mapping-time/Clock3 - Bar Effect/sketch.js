@@ -11,13 +11,6 @@ function setup() {
   // web inspector and poking around to see the various values the clock function gives you
   print('starting time:', clock())
 
-//   var r=random(255)
-//   var g = random (255)
-//   var b = random (255)
-
-//    let from=color(255,255,255) 
-//    let to=color(r,g,b);
-//     amt=0;
 
 }
 
@@ -34,34 +27,22 @@ function draw()
    var minsWidth = map(now.min,  0,60, 0,barHeight)
    var secsWidth = map(now.sec,  0,60, 0,barHeight) 
 
+   var nightColor = color("#152CA3")
+   var mornColor = color("#A3B2FF")
+   var colorSec = lerpColor(nightColor,mornColor,now.progress.day)
+   var colorMin = lerpColor(mornColor,nightColor,now.progress.day)
+   var colorHour = lerpColor(mornColor,nightColor,now.progress.day)
 
 
-  //  let from=color(255,255,255) 
-  //  let to=color(random(255),random(255),random(255));
-  //   amt=0;
-
-  //  // let interA=lerpColor(from, to, 0.1)
-  //  // let interB=lerpColor (from,to,1)
-
-  //   fill(lerpColor(from, to, smoothstep(0.3,0.7,amt);
-  // amt += 0.01;
-  // if(amt >= 1){
-  //   amt = 0.0;
-  //   from = to;
-  //   to = color(random(255),random(255),random(255));
-  // }
-
-   // let secschange = map(now.sec, interA, interB, 0, maxWidth) 
-
-    fill(255,0,0,30) //seconds
+    fill(colorSec, 50) //seconds
     noStroke()
   rect(x, y, maxWidth, secsWidth)
   
-    fill(255,0,0,50) //mins
+    fill(colorMin, 75) //mins
     noStroke()
   rect(x, 200, maxWidth, minsWidth)
 
-    fill(255,0,0,70) //hours
+    fill(colorHour) //hours
     noStroke()
   rect(x, 400, maxWidth, hoursWidth)
   

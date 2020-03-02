@@ -61,10 +61,10 @@ function setup() {
   pop()
 
   translate(100, 400)
-  var xPositions = [0, 5, 10, 20, 40, 80, 160, 320, 640]
-  xPositions.forEach(function(x, i){
+  var xPositions = [160, 320, 640]
+  xPositions.forEach((x, i) =>{
     stroke(255 - 30*i)
     line(x, 0, x, 150)
   })
-
+print(xPositions[1])
 }
