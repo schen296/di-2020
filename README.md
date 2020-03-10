@@ -3,6 +3,7 @@
 
 ### Exercise #1: [Nothing but a Number](./1.single-numbers)
 ### Exercise #2: [Right Twice a Day](./2.mapping-time)
+### Exercise #3: [A Thousand Suns](./3.mapping-quantities)
 
 ## Student Work
 | Projects | Code |
