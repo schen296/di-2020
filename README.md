@@ -1,7 +1,7 @@
 # Data Integrity
 **https://di.samizdat.co/2020 › Spring 2020 › Pratt › CDGD 414**
 
-### Exercise #1: [Nothing but a Number](./1.minimal-data)
+### Exercise #1: [Nothing but a Number](./1.single-numbers)
 ### Exercise #2: [Right Twice a Day](./2.mapping-time)
 
 ## Student Work
