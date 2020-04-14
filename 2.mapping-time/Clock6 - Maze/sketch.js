@@ -58,8 +58,6 @@ function draw() {
   }
 
 
-  // var y1 = map(now.progress.week,0,1,0,90)
-
    background('white')
 
    noStroke()
