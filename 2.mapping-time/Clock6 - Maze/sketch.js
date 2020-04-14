@@ -28,33 +28,33 @@ function draw() {
 
   var s = 1/7
 
-  if ((now.progress.week<=s) & (now.progress.week>=0)) {
-    var y = map(now.progress.week,0,1,-7.5,90)
+  if (now.progress.week<s) {
+    var y = map(now.progress.week,0,s,-7.5,90)
     var x = 60
   }
-  else if ((now.progress.week<=s*2) & (now.progress.week>=s)) {
-      var x = map(now.progress.week,0,1,60, 340)
+  else if (now.progress.week<s*2)  {
+      var x = map(now.progress.week,s,s*2,60, 340)
       var y = 90
   }
-  else if (now.progress.week<=s*3) {
+  else if (now.progress.week<s*3) {
     var x = 340
-    var y = map(now.progress.week,0,1,90, 190)
+    var y = map(now.progress.week,s*2,s*3,90, 190)
   }
-  else if (now.progress.week<=s*4) {
-    var x = map(now.progress.week,0,1,340,60)
+  else if (now.progress.week<s*4) {
+    var x = map(now.progress.week,s*3,s*4,340,60)
     var y = 190  
   }
-  else if (now.progress.week<=s*5) {
+  else if (now.progress.week<s*5) {
     var x = 60
-    var y = map(now.progress.week,0,1,190, 290)
+    var y = map(now.progress.week,s*4,s*5,190, 290)
   }
-  else if (now.progress.week<=s*6) {
-    var x = map(now.progress.week,0,1,60, 340)
+  else if (now.progress.week<s*6) {
+    var x = map(now.progress.week,s*5,s*6,60, 340)
     var y = 290
   }
-  else if (now.progress.week<=s*7) {
+  else if (now.progress.week<s*7) {
     var x = 340
-    var y = map(now.progress.week,0,1,290, 407.5)
+    var y = map(now.progress.week,s*6,s*7,290, 407.5)
   }
 
 
@@ -78,8 +78,32 @@ function draw() {
    rect(200,90+ySpacing*2,300,20)
    rect(340,50+ySpacing*3,20,100)
 
-   noStroke()
+  // var t = 1/4
+
+  // if (now.progress.month<t) {
+  //  noStroke()
+  //  fill('red')
+  //  circle(x,y,15)
+  // }
+
+  // else if (now.progress.month<t*2) { 
+  //  noStroke()
+  //  fill('yellow')
+  //  circle(x,y,15)
+  // }
+  
+  // else if (now.progress.month<t*3) { 
+  //  noStroke()
+  //  fill('green')
+  //  circle(x,y,15)
+  // }
+
+  // else if (now.progress.month<t*4) {
+  //  noStroke()
+  //  fill('blue')
+  //  circle(x,y,15)
+  // }
+  noStroke()
    fill(colorNow)
    circle(x,y,15)
-
 }

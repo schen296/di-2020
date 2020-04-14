@@ -19,3 +19,10 @@ Sketch5- Days(7), weeks(4), and months(12) are measured by the position of the c
 
 Sketch6- Days(7), weeks(4), and months(12) are measured by one cycle through the track, the color change of the ball, and the value change of the background. In this way, it seems like each time a ball finishes the cycle a new ball comes in.
 
+Sketch7-
+
+Sketch8-
+
+Sketch9-
+
+

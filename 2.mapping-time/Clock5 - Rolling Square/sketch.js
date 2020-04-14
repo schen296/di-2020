@@ -62,8 +62,9 @@ function draw() {
   push();
     noStroke()
     fill(color)
-    circle(275,y,15)
+    circle(x,y,15)
   pop()
 
+ 
 }
 
